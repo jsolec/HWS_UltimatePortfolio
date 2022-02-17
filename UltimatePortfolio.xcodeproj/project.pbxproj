@@ -11,6 +11,9 @@
 		B25600BD27BD4E0C00C6EEE1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25600BC27BD4E0C00C6EEE1 /* ContentView.swift */; };
 		B25600BF27BD4E0E00C6EEE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B25600BE27BD4E0E00C6EEE1 /* Assets.xcassets */; };
 		B25600C227BD4E0E00C6EEE1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B25600C127BD4E0E00C6EEE1 /* Preview Assets.xcassets */; };
+		B257819027BE8C1C00D63213 /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B257818E27BE8C1C00D63213 /* Main.xcdatamodeld */; };
+		B257819227BE959B00D63213 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B257819127BE959B00D63213 /* DataController.swift */; };
+		B257819727BEA47B00D63213 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B257819627BEA47B00D63213 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,11 @@
 		B25600BC27BD4E0C00C6EEE1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B25600BE27BD4E0E00C6EEE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B25600C127BD4E0E00C6EEE1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B257818F27BE8C1C00D63213 /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
+		B257819127BE959B00D63213 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		B257819327BEA34200D63213 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B257819427BEA37B00D63213 /* UltimatePortfolio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UltimatePortfolio.entitlements; sourceTree = "<group>"; };
+		B257819627BEA47B00D63213 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B257819727BEA47B00D63213 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +46,7 @@
 			children = (
 				B25600B927BD4E0C00C6EEE1 /* UltimatePortfolio */,
 				B25600B827BD4E0C00C6EEE1 /* Products */,
+				B257819527BEA47B00D63213 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,8 +61,12 @@
 		B25600B927BD4E0C00C6EEE1 /* UltimatePortfolio */ = {
 			isa = PBXGroup;
 			children = (
+				B257819427BEA37B00D63213 /* UltimatePortfolio.entitlements */,
+				B257819327BEA34200D63213 /* Info.plist */,
 				B25600BA27BD4E0C00C6EEE1 /* UltimatePortfolioApp.swift */,
 				B25600BC27BD4E0C00C6EEE1 /* ContentView.swift */,
+				B257818E27BE8C1C00D63213 /* Main.xcdatamodeld */,
+				B257819127BE959B00D63213 /* DataController.swift */,
 				B25600BE27BD4E0E00C6EEE1 /* Assets.xcassets */,
 				B25600C027BD4E0E00C6EEE1 /* Preview Content */,
 			);
@@ -65,6 +79,14 @@
 				B25600C127BD4E0E00C6EEE1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B257819527BEA47B00D63213 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B257819627BEA47B00D63213 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +159,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B257819027BE8C1C00D63213 /* Main.xcdatamodeld in Sources */,
+				B257819227BE959B00D63213 /* DataController.swift in Sources */,
 				B25600BD27BD4E0C00C6EEE1 /* ContentView.swift in Sources */,
 				B25600BB27BD4E0C00C6EEE1 /* UltimatePortfolioApp.swift in Sources */,
 			);
@@ -266,12 +290,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = UltimatePortfolio/UltimatePortfolio.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"UltimatePortfolio/Preview Content\"";
-				DEVELOPMENT_TEAM = X7LLAXGBY7;
+				DEVELOPMENT_TEAM = BQHMJ2C6RL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UltimatePortfolio/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -282,7 +308,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = es.jsolec.UltimatePortfolio;
+				PRODUCT_BUNDLE_IDENTIFIER = com.futureworkshops.UltimatePortfolioTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -295,12 +321,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = UltimatePortfolio/UltimatePortfolio.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"UltimatePortfolio/Preview Content\"";
-				DEVELOPMENT_TEAM = X7LLAXGBY7;
+				DEVELOPMENT_TEAM = BQHMJ2C6RL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UltimatePortfolio/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -311,7 +339,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = es.jsolec.UltimatePortfolio;
+				PRODUCT_BUNDLE_IDENTIFIER = com.futureworkshops.UltimatePortfolioTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -341,6 +369,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B257818E27BE8C1C00D63213 /* Main.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B257818F27BE8C1C00D63213 /* Main.xcdatamodel */,
+			);
+			currentVersion = B257818F27BE8C1C00D63213 /* Main.xcdatamodel */;
+			path = Main.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B25600AF27BD4E0C00C6EEE1 /* Project object */;
 }
