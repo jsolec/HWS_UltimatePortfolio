@@ -16,6 +16,8 @@
 		B257819727BEA47B00D63213 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B257819627BEA47B00D63213 /* CloudKit.framework */; };
 		B257819927BEA87100D63213 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B257819827BEA87100D63213 /* HomeView.swift */; };
 		B257819B27BEA8E700D63213 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B257819A27BEA8E700D63213 /* ProjectsView.swift */; };
+		B2A5411427BFBB30001C2E36 /* Item-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A5411327BFBB30001C2E36 /* Item-CoreDataHelpers.swift */; };
+		B2A5411727BFBECF001C2E36 /* Project-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A5411627BFBECF001C2E36 /* Project-CoreDataHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		B257819627BEA47B00D63213 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		B257819827BEA87100D63213 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B257819A27BEA8E700D63213 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
+		B2A5411327BFBB30001C2E36 /* Item-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item-CoreDataHelpers.swift"; sourceTree = "<group>"; };
+		B2A5411627BFBECF001C2E36 /* Project-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,14 +69,12 @@
 		B25600B927BD4E0C00C6EEE1 /* UltimatePortfolio */ = {
 			isa = PBXGroup;
 			children = (
-				B257819427BEA37B00D63213 /* UltimatePortfolio.entitlements */,
+				B2A5411127BFB15F001C2E36 /* App */,
+				B2A5411527BFBB3E001C2E36 /* CoreData */,
+				B2A5411227BFB16F001C2E36 /* Services */,
+				B2A5411027BFB145001C2E36 /* Views */,
 				B257819327BEA34200D63213 /* Info.plist */,
-				B25600BA27BD4E0C00C6EEE1 /* UltimatePortfolioApp.swift */,
-				B25600BC27BD4E0C00C6EEE1 /* ContentView.swift */,
 				B257818E27BE8C1C00D63213 /* Main.xcdatamodeld */,
-				B257819127BE959B00D63213 /* DataController.swift */,
-				B257819827BEA87100D63213 /* HomeView.swift */,
-				B257819A27BEA8E700D63213 /* ProjectsView.swift */,
 				B25600BE27BD4E0E00C6EEE1 /* Assets.xcassets */,
 				B25600C027BD4E0E00C6EEE1 /* Preview Content */,
 			);
@@ -93,6 +95,42 @@
 				B257819627BEA47B00D63213 /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B2A5411027BFB145001C2E36 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B25600BC27BD4E0C00C6EEE1 /* ContentView.swift */,
+				B257819827BEA87100D63213 /* HomeView.swift */,
+				B257819A27BEA8E700D63213 /* ProjectsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B2A5411127BFB15F001C2E36 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B257819427BEA37B00D63213 /* UltimatePortfolio.entitlements */,
+				B25600BA27BD4E0C00C6EEE1 /* UltimatePortfolioApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B2A5411227BFB16F001C2E36 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B257819127BE959B00D63213 /* DataController.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B2A5411527BFBB3E001C2E36 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				B2A5411627BFBECF001C2E36 /* Project-CoreDataHelpers.swift */,
+				B2A5411327BFBB30001C2E36 /* Item-CoreDataHelpers.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,10 +205,12 @@
 			files = (
 				B257819B27BEA8E700D63213 /* ProjectsView.swift in Sources */,
 				B257819027BE8C1C00D63213 /* Main.xcdatamodeld in Sources */,
+				B2A5411727BFBECF001C2E36 /* Project-CoreDataHelpers.swift in Sources */,
 				B257819227BE959B00D63213 /* DataController.swift in Sources */,
 				B25600BD27BD4E0C00C6EEE1 /* ContentView.swift in Sources */,
 				B257819927BEA87100D63213 /* HomeView.swift in Sources */,
 				B25600BB27BD4E0C00C6EEE1 /* UltimatePortfolioApp.swift in Sources */,
+				B2A5411427BFBB30001C2E36 /* Item-CoreDataHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
