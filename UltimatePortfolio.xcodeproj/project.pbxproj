@@ -18,6 +18,8 @@
 		B257819B27BEA8E700D63213 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B257819A27BEA8E700D63213 /* ProjectsView.swift */; };
 		B2A5411427BFBB30001C2E36 /* Item-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A5411327BFBB30001C2E36 /* Item-CoreDataHelpers.swift */; };
 		B2A5411727BFBECF001C2E36 /* Project-CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A5411627BFBECF001C2E36 /* Project-CoreDataHelpers.swift */; };
+		B2A5411927BFE421001C2E36 /* EditItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A5411827BFE420001C2E36 /* EditItemView.swift */; };
+		B2A5411B27C012FB001C2E36 /* ItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A5411A27C012FB001C2E36 /* ItemRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		B257819A27BEA8E700D63213 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
 		B2A5411327BFBB30001C2E36 /* Item-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item-CoreDataHelpers.swift"; sourceTree = "<group>"; };
 		B2A5411627BFBECF001C2E36 /* Project-CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project-CoreDataHelpers.swift"; sourceTree = "<group>"; };
+		B2A5411827BFE420001C2E36 /* EditItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemView.swift; sourceTree = "<group>"; };
+		B2A5411A27C012FB001C2E36 /* ItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +105,10 @@
 			isa = PBXGroup;
 			children = (
 				B25600BC27BD4E0C00C6EEE1 /* ContentView.swift */,
+				B2A5411827BFE420001C2E36 /* EditItemView.swift */,
 				B257819827BEA87100D63213 /* HomeView.swift */,
 				B257819A27BEA8E700D63213 /* ProjectsView.swift */,
+				B2A5411A27C012FB001C2E36 /* ItemRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -206,6 +212,8 @@
 				B257819B27BEA8E700D63213 /* ProjectsView.swift in Sources */,
 				B257819027BE8C1C00D63213 /* Main.xcdatamodeld in Sources */,
 				B2A5411727BFBECF001C2E36 /* Project-CoreDataHelpers.swift in Sources */,
+				B2A5411927BFE421001C2E36 /* EditItemView.swift in Sources */,
+				B2A5411B27C012FB001C2E36 /* ItemRowView.swift in Sources */,
 				B257819227BE959B00D63213 /* DataController.swift in Sources */,
 				B25600BD27BD4E0C00C6EEE1 /* ContentView.swift in Sources */,
 				B257819927BEA87100D63213 /* HomeView.swift in Sources */,
